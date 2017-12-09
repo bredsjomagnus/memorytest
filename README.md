@@ -1,3 +1,17 @@
+**BUILD STATUS**
+
+*Travis*: [![Build Status](https://travis-ci.org/bredsjomagnus/memorytest.svg?branch=master)](https://travis-ci.org/bredsjomagnus/memorytest), *Scrutinizer*: [![Build Status](https://scrutinizer-ci.com/g/bredsjomagnus/memorytest/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bredsjomagnus/memorytest/build-status/master)
+
+
+**CODE COVERAGE**
+
+*Scrutinizer*: [![Code Coverage](https://scrutinizer-ci.com/g/bredsjomagnus/memorytest/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/bredsjomagnus/memorytest/?branch=master), *Coveralls*: [![Coverage Status](https://coveralls.io/repos/github/bredsjomagnus/memorytest/badge.svg?branch=master)](https://coveralls.io/github/bredsjomagnus/memorytest?branch=master), *Codecov*: [![codecov](https://codecov.io/gh/bredsjomagnus/memorytest/branch/master/graph/badge.svg)](https://codecov.io/gh/bredsjomagnus/memorytest)
+
+<!-- *Codeclimate*: [![Test Coverage](https://api.codeclimate.com/v1/badges/fe43330227738fcde371/test_coverage)](https://codeclimate.com/github/bredsjomagnus/memorytest/test_coverage) -->
+
+**CODE QUALITY**
+
+*Scrutinizer*: [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bredsjomagnus/memorytest/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bredsjomagnus/memorytest/?branch=master), *Codeclimate*: [![Maintainability](https://api.codeclimate.com/v1/badges/fe43330227738fcde371/maintainability)](https://codeclimate.com/github/bredsjomagnus/memorytest/maintainability), *Codeacy*: [![Codacy Badge](https://api.codacy.com/project/badge/Grade/59e45be9ec944a0b8b08992f61086b85)](https://www.codacy.com/app/bredsjomagnus/memorytest?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bredsjomagnus/memorytest&amp;utm_campaign=Badge_Grade)
 # Memory Game
 
 ## A module for educational purposes
@@ -28,7 +42,7 @@ connect.addEventListener("click", function() {
 **Bilder**: /lib/Images/Memorycards eller [memorycards](https://github.com/bredsjomagnus/memorytest/tree/master/lib/Images/Memorycards) <br>
 **Style**: /lib/Style/memory.less eller [memory.less](https://github.com/bredsjomagnus/memorytest/blob/master/lib/Style/memory.less) <br>
 **HTML**: /lib/Pug/memory.pug eller [memory.pug](https://github.com/bredsjomagnus/memorytest/blob/master/lib/Pug/memory.pug) <br>
-*Bara ett skelett som bygger på bootstrap. Måste själv hämta extend layout och lägga till scripts så som memoryclient.js.*
+*Bara ett skelett som bygger på bootstrap. Måste själv extend layout och lägga till scripts så som memoryclient.js.*
 
 
 ---

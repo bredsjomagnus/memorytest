@@ -1,0 +1,5 @@
+coverage/*
+lib/Server/*
+lib/Client/*
+lib/Pug/*
+lib/Images/*

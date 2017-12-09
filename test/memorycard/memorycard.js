@@ -6,7 +6,7 @@
 /* global describe it */
 
 var assert = require("assert");
-const Memorycard = require("../../src/Memory/memorycard");
+const Memorycard = require("../../lib/Memory/memorycard");
 
 
 /**

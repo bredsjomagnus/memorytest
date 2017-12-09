@@ -1,0 +1,19 @@
+checks:
+    javascript: true
+
+filter:
+    excluded_paths:
+        - node_modules/*
+        - coverage/*
+
+build:
+    tests:
+        before:
+            - make install
+
+        override:
+            -
+                command: 'npm run test-scrutinizer'
+                coverage:
+                    file: 'coverage/clover.xml'
+                    format: 'clover'

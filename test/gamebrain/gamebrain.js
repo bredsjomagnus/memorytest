@@ -6,7 +6,7 @@
 /* global describe it */
 
 var assert = require("assert");
-const Gamebrain = require("../../src/Memory/gamebrain");
+const Gamebrain = require("../../lib/Memory/gamebrain");
 
 
 /**

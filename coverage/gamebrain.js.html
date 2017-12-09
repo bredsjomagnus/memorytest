@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for gamebrain.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> gamebrain.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">84.13% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>53/63</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">76.47% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>13/17</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">63.64% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>7/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">84.13% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>53/63</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * A module for Memory game brain.
+ *
+ * @module
+ */
+"use strict";
+&nbsp;
+class Gamebrain {
+    /**
+     * @constructor
+     */
+    constructor() {
+        this.colors = [
+            "blackplayer",
+            "redplayer",
+            "blueplayer",
+            "greenplayer",
+            "pinkplayer",
+            "orangeplayer",
+            "yellowplayer",
+            "limegreenplayer",
+            "purpleplayer"
+        ];
+        this.usedcolors = [];
+        this.players = new Map();
+        this.playersscore = new Map(); // filles with players and cardvalues of pairs
+        this.paircheck = ""; // temp holder for checking if pair fliped.
+        this.playerinturnmarker = 0; // for moving forward to next player in turn.
+        this.playerinturn; // nickname of player in turn.
+        this.numberofplayermoves = 0; // number of moves player in turn has done.
+        this.cardvalues = []; // for storing flipped cards values.
+    }
+&nbsp;
+    /**
+    * Adding player to Map (nickname, colorclass)
+    *
+    * @param {string} player - uniqified nickname
+    * @param {string} color - color class for that player
+    */
+    addPlayer(player, color) {
+        this.players.set(player, color);
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    ma</span>keMove() {
+<span class="cstat-no" title="statement not covered" >        this.numberofplayermoves += 1;</span>
+<span class="cstat-no" title="statement not covered" >        console.log("this.numberofplayermoves: " + this.numberofplayermoves);</span>
+    }
+&nbsp;
+    setCardValue(player, colorclass, cardvalue) {
+        // finns det inget kort här så lägga bara till
+        // finns det redan ett kort kolla om det har samma värde.
+        // har det samma värde är det ett par och numberofplayermoves nollställs
+        // man tar även bort alla kort i cardvalues
+        // är det inte ett par nollställs inte inte numberofplayers men cardvalues töms.
+        var cardvalues = this.cardvalues;
+&nbsp;
+        if (cardvalues.length === 0) {
+            this.cardvalues.push(cardvalue);
+        } else {
+            // det finns kort i cardvalues
+            <span class="missing-if-branch" title="else path not taken" >E</span>if (cardvalues.indexOf(cardvalue) != -1) {
+                // det är samma värde som nyinkomna.
+                this.numberofplayermoves = 0;
+                // lägger till spelares colorclass med kort i poänglistan.
+                this.playersscore.set(player, cardvalue);
+                this.paircheck = colorclass;
+            }
+            this.cardvalues = [];
+        }
+    }
+&nbsp;
+    /**
+    * Set and get player in turn.
+    *
+    * @param {boolean} firstround - set to false by default.
+    *
+    * @return {string} nickname of player who´s turn it is.
+    */
+    setActivePlayer(firstround = false) {
+        var players = this.getPlayersNicks();
+        var numberofplayermoves = this.numberofplayermoves;
+&nbsp;
+        // console.log("numberofplayermoves: " + numberofplayermoves);
+        if (firstround) {
+            this.playerinturnmarker = Math.floor(Math.random() * players.length);
+            this.playerinturn = players[this.playerinturnmarker];
+            this.numberofplayermoves = 0;
+            // console.log("firstround - this.playerinturnmarker: " + this.playerinturnmarker);
+            // console.log("firstround - this playerinturn: " + this.playerinturn);
+        } else {
+            if (numberofplayermoves == 2) {
+                // console.log("Selecting new active player.");
+                var playerinturnmarker = this.playerinturnmarker;
+&nbsp;
+                <span class="missing-if-branch" title="else path not taken" >E</span>if (playerinturnmarker &lt; players.length-1) {
+                    this.playerinturnmarker += 1;
+                } else {
+<span class="cstat-no" title="statement not covered" >                    this.playerinturnmarker = 0;</span>
+                }
+                // console.log("this.playerinturnmarker: " + this.playerinturnmarker);
+                this.playerinturn = players[this.playerinturnmarker];
+                // console.log("New player in turn: " + this.playerinturn);
+                this.numberofplayermoves = 0;
+            }
+        }
+        return this.playerinturn;
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    dr</span>opPlayer(player) {
+<span class="cstat-no" title="statement not covered" >        this.players.delete(player);</span>
+        // console.log("Players (accroding to GameBrain)");
+        // console.log(this.players);
+    }
+&nbsp;
+    /**
+    * Decide unique color for 'player' and add player to player Map
+    *
+    * @param {string} player - nickname of player to add to game
+    *
+    * @return {string} colorclass for player
+    */
+    setPlayerColor(player) {
+        var color = "blackplayer";
+        var notuniquecolor = true;
+&nbsp;
+        while (notuniquecolor) {
+            color = this.colors[Math.floor(Math.random() * this.colors.length)];
+            if (this.usedcolors.indexOf(color) === -1) {
+                notuniquecolor = false;
+                this.usedcolors.push(color);
+                this.addPlayer(player, color);
+            }
+        }
+        return color;
+    }
+&nbsp;
+    /**
+    * Takes a nickname and add a figure to make nickname unique.
+    *
+    * @param {string} incomingnickname, from new user.
+    *
+    * @return {string} unique nickname.
+    */
+    uniquifyname(incomingnickname) {
+        var incomingnicknamelength = incomingnickname.length;
+        var stringdiff;
+        var users = this.getPlayersNicks();
+        var counter = 2;
+&nbsp;
+        // while(users.indexOf(incomingnickname) !== -1) {
+        while (users.indexOf(incomingnickname) !== -1) {
+            if (incomingnickname.length == incomingnicknamelength) {
+                incomingnickname = incomingnickname + counter;
+            } else {
+                stringdiff = incomingnickname.length - incomingnicknamelength;
+                incomingnickname = incomingnickname.slice(0, -stringdiff);
+                incomingnickname = incomingnickname + counter;
+            }
+            counter++;
+        }
+        return incomingnickname;
+    }
+&nbsp;
+    getPlayersNicks() {
+        return [...this.players.keys()];
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    ge</span>tPlayersColors() {
+<span class="cstat-no" title="statement not covered" >        return [...this.players.values()];</span>
+    }
+&nbsp;
+    /**
+    * Used to check if pair was flipped
+    *
+    * @return {string} result - 'nopair' if no pair was flipped. Otherwise players colorclass.
+    */
+<span class="fstat-no" title="function not covered" >    go</span>tPair() {
+        var result = <span class="cstat-no" title="statement not covered" >"";</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (this.paircheck != "") {</span>
+<span class="cstat-no" title="statement not covered" >            result = this.paircheck;</span>
+<span class="cstat-no" title="statement not covered" >            this.paircheck = "";</span>
+        }
+<span class="cstat-no" title="statement not covered" >        return result;</span>
+    }
+}
+&nbsp;
+// Export module
+module.exports = Gamebrain;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Dec 09 2017 18:51:56 GMT+0100 (Västeuropa, normaltid)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>
