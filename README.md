@@ -17,18 +17,18 @@ Den är beroende av modulen `ws`.
 
 #### Övrig kod och bilder
 
-**Serversidan (bin/www.js)**: /lib/Server/memoryserver.js eller <br>
-**Klienten**: /lib/Client/memoryclient.js eller <br>
+**Serversidan (bin/www.js)**: /lib/Server/memoryserver.js eller [memoryserver.js](https://github.com/bredsjomagnus/memorytest/blob/master/lib/Server/memoryserver.js) <br>
+**Klienten**: /lib/Client/memoryclient.js eller [memoryclient.js](https://github.com/bredsjomagnus/memorytest/blob/master/lib/Client/memoryclient.js) <br>
 *Glöm inte sätta ws host:port i koden för klienten.*
 ```
 connect.addEventListener("click", function() {
     websocket = new WebSocket('ws://host:port/');
 ```
 
-**Bilder**: /lib/Images/Memorycards eller
-**Style**: /lib/Style/memory.less eller
-**HTML**: /lib/Pug/memory.pug<br>
-*Bara ett skelett. Måste själv hämta hem rätt layout och lägga till memoryclient.js.*
+**Bilder**: /lib/Images/Memorycards eller [memorycards](https://github.com/bredsjomagnus/memorytest/tree/master/lib/Images/Memorycards) <br>
+**Style**: /lib/Style/memory.less eller [memory.less](https://github.com/bredsjomagnus/memorytest/blob/master/lib/Style/memory.less) <br>
+**HTML**: /lib/Pug/memory.pug eller [memory.pug](https://github.com/bredsjomagnus/memorytest/blob/master/lib/Pug/memory.pug) <br>
+*Bara ett skelett som bygger på bootstrap. Måste själv hämta extend layout och lägga till scripts så som memoryclient.js.*
 
 
 ---
