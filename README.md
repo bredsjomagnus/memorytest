@@ -19,8 +19,6 @@
 
 This is a test module for **educational purposes** (PA1442 H17 Lp2 Webbaserade ramverk 2, [BTH](https://www.bth.se/)).
 
-**Don't waste your space or time on this**
-
 ### Installation
 `npm install memorytest`
 
@@ -64,7 +62,6 @@ lib/Pug/memory.pug eller [memory.pug](https://github.com/bredsjomagnus/memorytes
 ### Beskrivning av klasserna
 #### Gameboard
 Spelbrädet som skickas till spelarna för uppdatering av webbläsaren.
-
 
 Spelbrädet kan idagsläget enbart skapas med storleken Gameboard(4, 5)
 
