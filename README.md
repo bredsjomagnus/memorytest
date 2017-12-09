@@ -13,7 +13,7 @@
 
 *Scrutinizer*: [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bredsjomagnus/memorytest/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bredsjomagnus/memorytest/?branch=master), *Codeclimate*: [![Maintainability](https://api.codeclimate.com/v1/badges/fe43330227738fcde371/maintainability)](https://codeclimate.com/github/bredsjomagnus/memorytest/maintainability), *Codeacy*: [![Codacy Badge](https://api.codacy.com/project/badge/Grade/59e45be9ec944a0b8b08992f61086b85)](https://www.codacy.com/app/bredsjomagnus/memorytest?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bredsjomagnus/memorytest&amp;utm_campaign=Badge_Grade)
 # Memory Game
-[exempelbild](https://i.imgur.com/nUgH6fU.png)
+![exempelbild](https://i.imgur.com/nUgH6fU.png)
 
 ## A module for educational purposes
 
