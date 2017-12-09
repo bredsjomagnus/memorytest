@@ -1,0 +1,7 @@
+{
+  "name": "memorytest",
+  "version": "1.0.6",
+  "main": "index.js",
+  "dependencies": {
+    "ws": "^3.3.2"
+}

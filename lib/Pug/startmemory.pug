@@ -1,0 +1,40 @@
+
+.row
+    .col-md-12
+        <form id='connectform'>
+            <div class="input-group">
+                <input class='form-control' style=width:98%; type='text' id='nickname' placeholder='nickname'>
+                <span class="input-group-btn">
+                    <input class='btn btn-primary' type='button' id='connect' value='Anslut' disabled>
+                </span>
+            </div>
+
+        </form>
+        <form id='messageform' class='messageform'>
+            <div class="input-group">
+                <input class='form-control' type='text' id='message' placeholder='meddelande'>
+                <span class="input-group-btn">
+                    <input class='btn btn-primary' type='button' id='messagebtn' value='Skicka'>
+                    <input class='btn btn-danger' type='button' id='disconnectbtn' value='Koppla ner'>
+                </span>
+            </div>
+        </form>
+
+.row
+    div.sidechatdiv.col-md-3
+        .row
+            .col-md-12
+                h3 Spelare
+                .well.clientwell#clientarea
+        .row
+            h3 Meddelanden
+            .col-md-12.chatwindow#chatwindow
+
+                .well.msgwell#msgarea
+
+    div.gameboard.col-md-6#gameboard
+        <button id='startgame' class='startgame btn btn-primary'>Starta nytt spel</button>
+
+    div.row
+        .col-md-offset-3.col-md-9
+            <button id='nextturnbtn' class='nextturnbtn btn btn-primary'>Nästa spelare</button>
