@@ -30,19 +30,33 @@ Den är beroende av modulen `ws`.
 
 ---
 
-#### Övrig kod och bilder
+#### Kod och bilder som måste läggas till
 
-**Serversidan (bin/www.js)**: /lib/Server/memoryserver.js eller [memoryserver.js](https://github.com/bredsjomagnus/memorytest/blob/master/lib/Server/memoryserver.js) <br>
-**Klienten**: /lib/Client/memoryclient.js eller [memoryclient.js](https://github.com/bredsjomagnus/memorytest/blob/master/lib/Client/memoryclient.js) <br>
-*Glöm inte sätta ws host:port i koden för klienten.*
+**Serversidan**<br>
+lib/Server/memoryserver.js eller [memoryserver.js](https://github.com/bredsjomagnus/memorytest/blob/master/lib/Server/memoryserver.js)<br>
+*Läggs in i bin/www eller motsvarande.*
+
+
+**Klienten**<br>
+lib/Client/memoryclient.js eller [memoryclient.js](https://github.com/bredsjomagnus/memorytest/blob/master/lib/Client/memoryclient.js) <br>
+*Glöm inte sätta ws host:port i koden i klienten.*
 ```
 connect.addEventListener("click", function() {
     websocket = new WebSocket('ws://host:port/');
 ```
 
-**Bilder**: /lib/Images/Memorycards eller [memorycards](https://github.com/bredsjomagnus/memorytest/tree/master/lib/Images/Memorycards) <br>
-**Style**: /lib/Style/memory.less eller [memory.less](https://github.com/bredsjomagnus/memorytest/blob/master/lib/Style/memory.less) <br>
-**HTML**: /lib/Pug/memory.pug eller [memory.pug](https://github.com/bredsjomagnus/memorytest/blob/master/lib/Pug/memory.pug) <br>
+**Bilder**<br>
+lib/Images/Memorycards eller [memorycards](https://github.com/bredsjomagnus/memorytest/tree/master/lib/Images/Memorycards) <br>
+*Att lägga under public/images/memorycards/*<br>
+*Nuvarnde bildnamn är "alpaca.png", "giraff.png", "monkeys.png", "panda.png", "puppy.png", "ram.png", "wolf.png", "squirrel.png", "fox.png", "bear.png".*<br>
+*Vill man ha andra bilder ändras detta i lib/Memory/Memorycard.js och att det finns korresponderande bilder i public/images/memorycards/*
+
+**Style**<br>
+lib/Style/memory.less eller [memory.less](https://github.com/bredsjomagnus/memorytest/blob/master/lib/Style/memory.less) <br>
+*Att lägga under public/stylesheet/*
+
+**HTML**<br>
+lib/Pug/memory.pug eller [memory.pug](https://github.com/bredsjomagnus/memorytest/blob/master/lib/Pug/memory.pug) <br>
 *Bara ett skelett som bygger på bootstrap. Måste själv extend layout och lägga till scripts så som memoryclient.js.*
 
 
