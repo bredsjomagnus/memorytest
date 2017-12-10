@@ -1,6 +1,6 @@
 {
     "name": "memorytest",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "main": "index.js",
     "scripts": {
         "test": "nyc --reporter=html --reporter=text mocha test/**/*.js",
